@@ -91,10 +91,10 @@ const About = () => {
 
                   <ul className="about-highlights" aria-label="Key outcomes">
                     <li>
-                      <span className="highlight">Orbit Sports Data:</span> sole engineer on a platform that has covered 50K+ matches across 70+ countries, with 1,000+ active analysts.
+                      <span className="highlight">Orbit Sports Data:</span> a platform that has covered 50K+ matches across 70+ countries, with 1,000+ active analysts.
                     </li>
                     <li>
-                      <span className="highlight">Live event pipeline:</span> de-duplication, reversal handling and strict event order, with customer feeds at 70–150 ms request/response (own measurement).
+                      <span className="highlight">Live event pipeline:</span> de-duplication, reversal handling and strict event order, with customer feeds at 70–150 ms request/response.
                     </li>
                     <li>
                       <span className="highlight">Customer delivery:</span> feeds over WebSocket, RabbitMQ and REST, with per-customer access control.

@@ -8,7 +8,7 @@ type ImpactStat = {
   detail: string;
 };
 
-// Figures come from Orbit's public site counters, the author's own measurements, or the test suite.
+// Figures come from Orbit's public site counters, measured latency, or the test suite.
 const stats: ImpactStat[] = [
   {
     value: "50K+",
@@ -23,17 +23,12 @@ const stats: ImpactStat[] = [
   {
     value: "70–150 ms",
     label: "Customer feed latency",
-    detail: "Live request/response time on the customer feed endpoints (own measurement)."
+    detail: "Live request/response time on the customer feed endpoints."
   },
   {
     value: "3,000+",
     label: "Automated tests",
     detail: "208 suites, with replay tools that re-run recorded matches to verify fixes."
-  },
-  {
-    value: "20–50",
-    label: "Live matches a day",
-    detail: "Typical daily coverage on the platform."
   }
 ];
 
@@ -50,7 +45,7 @@ const Impact = () => {
 
         <Row className="g-4 align-items-stretch">
           {stats.map((stat, index) => (
-            <Col key={stat.label} xs={12} md={6} lg={4} className="d-flex">
+            <Col key={stat.label} xs={12} md={6} lg={3} className="d-flex">
               <motion.div
                 className="w-100 d-flex"
                 initial={{ opacity: 0, y: 10 }}

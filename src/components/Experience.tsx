@@ -11,8 +11,7 @@ type ExperienceItem = {
   tech: string[];
 };
 
-// Kept in line with the CV (Boutros_Tawaifi_Resume_2026). Only figures that are verified
-// or explicitly labelled as the author's own measurement appear here.
+// Kept in line with the CV (Boutros_Tawaifi_Resume_2026). Only verified figures appear here.
 const experience: ExperienceItem[] = [
   {
     role: "Senior Full-Stack Engineer",
@@ -20,15 +19,18 @@ const experience: ExperienceItem[] = [
     period: "Oct 2021 — Present",
     location: "Remote",
     highlights: [
-      "Took over a proof-of-concept MVP (a backend plus admin and reporter app shells, built to test market interest) and rebuilt it into a production platform: rewrote the backend and both apps, built the infrastructure, email system and deployments, and connected it all. It now covers 20–50 live matches on a typical day.",
-      "Built third-party coverage ingestion (Extended Live): live match data from several providers, mapped into Orbit's format, de-duplicated and reconciled, with a customer-facing showcase app.",
-      "Built the live event pipeline: de-duplication, reversal handling (e.g. cancelled goals) and strict event order, delivered to customers over WebSocket, RabbitMQ and REST at 70–150 ms request/response (own measurement).",
-      "Built a Go scheduler and Node.js workers (Chrome DevTools Protocol) that observe a public third-party source for up to 300 matches at once into TimescaleDB and Redis, used internally for quality and divergence checks against reporter events.",
+      "Own the platform end to end: backend, reporter and admin apps, customer tools, infrastructure, email system and deployments. 50K+ matches across 70+ countries to date.",
+      "Microservices backend: core API, third-party coverage ingestion, Go scheduler and email worker, each deployed on its own.",
+      "Full-stack TypeScript: React and Angular frontends; Node.js and TypeORM services over MySQL, PostgreSQL/TimescaleDB and Redis.",
+      "Live event pipeline: transactional writes, idempotent corrections (e.g. cancelled goals), de-duplication and strict event order, delivered per customer over RabbitMQ queues, WebSocket and REST with OpenAPI contracts at 70–150 ms request/response.",
+      "Built third-party coverage ingestion (Extended Live): live match data from several providers, mapped into Orbit's format, de-duplicated with atomic Redis scripts and reconciled, with a customer-facing showcase app.",
+      "Built a Go scheduler and Node.js workers (Chrome DevTools Protocol) that observe a public third-party source into TimescaleDB and Redis, used internally for quality and divergence checks against reporter events.",
       "Extended the React reporter apps (lineups, substitutions, penalty shootouts, basketball quarters) and the Angular admin's moderator tools; built trial accounts limited by region and competition, and a customer dashboard.",
+      "Security: authentication and access control, Redis-backed rate limiting, security headers.",
       "Added 3,000+ automated tests (208 suites), SonarQube and Semgrep scans, and replay tools that re-run recorded matches to verify fixes.",
-      "Ran production infrastructure on AWS (EC2, Docker, private subnets, Security Groups, IP-allowlisted SSH, secrets in SSM). Backend deploys run reviewed database migrations, a PM2 restart and health checks.",
+      "Ran production on Linux and AWS (EC2, Docker) with scripted per-service deploys: reviewed database migrations, a PM2 restart and health checks.",
       "Fixed outbound email being rejected by Google Workspace with rate-limit errors: traced it in the application logs to a non-obvious mail-library setting that made the server identify itself by its IP instead of the domain.",
-      "Coding with AI since 2023, from manual ChatGPT-assisted work to an agentic workflow (Claude Code, Codex): tasks are built in slices on separate branches or worktrees, cross-reviewed by a second agent, then checked with unit, integration, mutation and fuzz tests plus visual and divergence checks. I review the agents' work through documents at several levels of detail, as I would another engineer's, and read the code myself before the final review. Deploy access is unlocked only for the release and relocked; the founders sign off each feature."
+      "Coding with AI since 2023, from manual ChatGPT-assisted work to an agentic workflow (Claude Code, Codex): tasks are built in slices on separate branches or worktrees, cross-reviewed by a second agent, then checked with unit, integration, mutation and fuzz tests plus visual and divergence checks. I review the agents' work through documents at several levels of detail, as I would another engineer's, and read the code myself before the final review. Deploy access is unlocked only for the release and relocked."
     ],
     tech: [
       "TypeScript",
@@ -66,7 +68,7 @@ const Experience = () => {
         <header className="experience-header">
           <h2 id="experience-title" className="experience-title">Experience</h2>
           <p className="experience-subtitle">
-            Sole developer of a live sports-data platform since 2021, working directly with the four founders.
+            A live sports-data platform, built and run since 2021.
           </p>
         </header>
 
