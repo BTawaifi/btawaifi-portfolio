@@ -40,7 +40,7 @@
   </g>
 
   <!-- Tool layer -->
-  <rect x="510" y="105" width="190" height="167" rx="8" fill="#e8eef7" stroke="#1f3a5f" stroke-width="1.5"/>
+  <rect x="510" y="105" width="190" height="200" rx="8" fill="#e8eef7" stroke="#1f3a5f" stroke-width="1.5"/>
   <g fill="#1b2430">
     <text x="605" y="135" text-anchor="middle" font-size="14" font-weight="600">createBridgeServer.ts</text>
     <text x="605" y="156" text-anchor="middle" font-size="12" fill="#5b6675">16 tools, input schemas,</text>
