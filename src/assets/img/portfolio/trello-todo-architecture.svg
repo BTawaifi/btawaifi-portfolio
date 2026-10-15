@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f3a5f"/>
+    </marker>
+  </defs>
+  <rect width="960" height="360" fill="#ffffff"/>
+  <text x="30" y="38" font-size="20" font-weight="600" fill="#1b2430">Trello Todo List: how the app talks to Trello</text>
+  <text x="30" y="58" font-size="13" fill="#5b6675">The server holds the Trello key and token (environment variables) and calls Trello's REST API for the client.</text>
+
+  <rect x="40" y="140" width="190" height="80" rx="8" fill="#e8eef7" stroke="#1f3a5f" stroke-width="1.5"/>
+  <text x="135" y="172" text-anchor="middle" font-size="14" font-weight="600" fill="#1b2430">React client</text>
+  <text x="135" y="194" text-anchor="middle" font-size="12" fill="#5b6675">task list and actions</text>
+
+  <rect x="330" y="140" width="200" height="80" rx="8" fill="#e8eef7" stroke="#1f3a5f" stroke-width="1.5"/>
+  <text x="430" y="172" text-anchor="middle" font-size="14" font-weight="600" fill="#1b2430">Express server</text>
+  <text x="430" y="194" text-anchor="middle" font-size="12" fill="#5b6675">key and token from env</text>
+
+  <rect x="630" y="140" width="190" height="80" rx="8" fill="#fff8ec" stroke="#8a4b00" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="725" y="172" text-anchor="middle" font-size="14" font-weight="600" fill="#1b2430">Trello REST API</text>
+  <text x="725" y="194" text-anchor="middle" font-size="12" fill="#5b6675">boards, lists, cards</text>
+
+  <rect x="330" y="260" width="200" height="64" rx="8" fill="#f3f6fa" stroke="#1f3a5f" stroke-width="1.5"/>
+  <text x="430" y="288" text-anchor="middle" font-size="14" font-weight="600" fill="#1b2430">Redis (optional)</text>
+  <text x="430" y="308" text-anchor="middle" font-size="12" fill="#5b6675">cache server</text>
+
+  <g stroke="#1f3a5f" stroke-width="1.6" fill="none" marker-end="url(#arr)">
+    <line x1="230" y1="170" x2="328" y2="170"/>
+    <line x1="328" y1="192" x2="232" y2="192"/>
+    <line x1="530" y1="170" x2="628" y2="170"/>
+    <line x1="628" y1="192" x2="532" y2="192"/>
+    <line x1="430" y1="220" x2="430" y2="258"/>
+  </g>
+  <g font-size="11" fill="#5b6675">
+    <text x="252" y="162">request</text>
+    <text x="252" y="208">data</text>
+    <text x="552" y="162">API call</text>
+    <text x="440" y="244">cache</text>
+  </g>
+</svg>

@@ -48,10 +48,14 @@ const experience: ExperienceItem[] = [
   },
   {
     role: "Freelance",
-    company: "Web development and video post-production",
+    company: "Video post-production and web development",
     period: "2019 — 2021",
-    highlights: ["Worked alongside university studies."],
-    tech: []
+    highlights: [
+      "Video editing and post-production on films produced by Issa Touma, including The Last Temptation and Jong in Aleppo, a short in the Dutch 2Doc series.",
+      "Graphic design and 3D work alongside: logos and brand marks, 3D renders and posters, shown in the design gallery.",
+      "Freelance web development for small clients, while studying Computer Engineering at Aleppo University."
+    ],
+    tech: ["Premiere", "Photoshop", "Illustrator", "Maya"]
   }
 ];
 

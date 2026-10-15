@@ -166,3 +166,10 @@
     left: 5px;
   }
 }
+
+/* Space between job cards. */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}

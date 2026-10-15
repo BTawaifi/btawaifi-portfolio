@@ -13,6 +13,13 @@ import rtsBanner from "../assets/img/portfolio/rts-banner.jpg";
 import moderationArchitecture from "../assets/img/portfolio/moderation-architecture.svg";
 import sequencerShot from "../assets/img/portfolio/cinematic-sequencer.jpg";
 import paneInkShot from "../assets/img/portfolio/paneink-demo.jpg";
+import petrossonSite from "../assets/img/portfolio/petrosson-site.jpg";
+import tcorpEms from "../assets/img/portfolio/tcorp-ems.jpg";
+import lastTemptation from "../assets/img/portfolio/last-temptation.jpg";
+import connect4 from "../assets/img/portfolio/connect4.jpg";
+import designGallery from "../assets/img/portfolio/design-gallery.jpg";
+import manualModeration from "../assets/img/portfolio/manual-moderation-architecture.svg";
+import trelloTodo from "../assets/img/portfolio/trello-todo-architecture.svg";
 import mcpArchitecture from "../assets/img/portfolio/mcp-bridge-architecture.svg";
 import audioArchitecture from "../assets/img/portfolio/audio-desilencer-architecture.svg";
 import markdownArchitecture from "../assets/img/portfolio/markdown-editor-architecture.svg";
@@ -105,6 +112,15 @@ const groups: Group[] = [
         links: []
       },
       {
+        title: "PetrossonBYGG website",
+        kind: "Client work · live site",
+        summary:
+          "A React and Redux website for a home installation and decoration company in Upplands Väsby, Stockholm, in Swedish, built to bring in enquiries through a contact form.",
+        tech: ["React", "Redux", "Bootstrap"],
+        image: { src: petrossonSite, alt: "Home page of the PetrossonBYGG website with a kitchen installation photo", fit: "cover" },
+        links: [{ label: "Live site", href: "https://petrossonbygg.github.io/" }]
+      },
+      {
         title: "Festival and media website",
         kind: "WordPress · rebuilt February 2025",
         summary: "A custom interactive media map built on Leaflet, for a Syrian arts organisation's website.",
@@ -140,6 +156,24 @@ const groups: Group[] = [
         ]
       },
       {
+        title: "Manual image moderation system",
+        kind: "Open source · full-stack app",
+        summary:
+          "An application for moderating incoming image reports and sending each result to the reporting system through a callback URL. React moderator app, Express and TypeORM back end on MySQL, an automated pre-filter step, and a rollback if the callback is not received.",
+        tech: ["React", "TypeScript", "Express", "TypeORM", "MySQL", "Docker"],
+        image: { src: manualModeration, alt: "Architecture diagram of the manual image moderation system", fit: "contain" },
+        links: [{ label: "Source", href: "https://github.com/BTawaifi/image_moderation_system" }]
+      },
+      {
+        title: "Trello Todo List",
+        kind: "Open source · full-stack app",
+        summary:
+          "A full-stack app for custom communication with Trello's REST API: a React client, an Express server that holds the credentials, and an optional Redis cache.",
+        tech: ["TypeScript", "React", "Express", "Redis"],
+        image: { src: trelloTodo, alt: "Architecture diagram of the Trello Todo List app", fit: "contain" },
+        links: [{ label: "Source", href: "https://github.com/BTawaifi/trello-todo-app" }]
+      },
+      {
         title: "Audio DeSilencer",
         kind: "Open source · Python package",
         summary:
@@ -165,6 +199,47 @@ const groups: Group[] = [
         tech: ["Lua", "Python"],
         image: { src: rtsBanner, alt: "FreeSpace RTS: Fleet Command banner", fit: "cover" },
         links: [{ label: "Source", href: "https://github.com/BTawaifi/RTS-fleet-command" }]
+      }
+    ]
+  },
+  {
+    heading: "Design, video and hardware",
+    projects: [
+      {
+        title: "Design gallery",
+        kind: "Personal · 3D and graphic design",
+        summary:
+          "3D models and renders made in Maya and ZBrush and finished in Photoshop, plus logo and brand work in Illustrator.",
+        tech: ["Maya", "ZBrush", "Photoshop", "Illustrator"],
+        image: { src: designGallery, alt: "Four pieces: a dragon head model, a fighter jet render, a medieval workbench render and a space poster", fit: "cover" },
+        links: []
+      },
+      {
+        title: "The Last Temptation",
+        kind: "Video · post-production",
+        summary:
+          "A film produced by Issa Touma about a shattered piano among the ruins of Aleppo. Video editing and graphics for the film.",
+        tech: ["Premiere", "Photoshop"],
+        image: { src: lastTemptation, alt: "Still from The Last Temptation: a grand piano among ruins", fit: "cover" },
+        links: [{ label: "Watch", href: "https://www.youtube.com/watch?v=xc7HufHJC10" }]
+      },
+      {
+        title: "TCorp.EMS",
+        kind: "Personal · UX/UI design",
+        summary:
+          "Design of an employee-management system in Figma: login, a department dashboard with tasks, and employee lists.",
+        tech: ["Figma"],
+        image: { src: tcorpEms, alt: "Dashboard design of an employee management system", fit: "cover" },
+        links: [{ label: "Design PDF", href: "https://drive.google.com/file/d/1K-k3gOtcFkoT4h3fBcaILU17NRF2uOcY/view" }]
+      },
+      {
+        title: "Connect 4",
+        kind: "University · hardware",
+        summary:
+          "An electronic Connect 4 game built on Arduino as a Computer Engineering project.",
+        tech: ["Arduino", "C++"],
+        image: { src: connect4, alt: "Connect 4 project logo", fit: "cover" },
+        links: [{ label: "Slides", href: "https://docs.google.com/presentation/d/e/2PACX-1vQv4wZtWALo0uGILweo8X_tTDX72SEyJQ_511VSY7nE5vGtuMY5munTtOnDgr2CHg/pub?start=false&loop=false&delayms=5000" }]
       }
     ]
   }
