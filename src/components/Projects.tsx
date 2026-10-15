@@ -257,8 +257,8 @@ const Projects = () => {
         </header>
 
         {groups.map((group) => (
-          <div key={group.heading} style={{ marginBottom: 56 }}>
-            <h3 style={{ fontSize: "1.25rem", fontWeight: 700, marginBottom: 20, color: "#1b2430", borderBottom: "2px solid #d5dae1", paddingBottom: 8 }}>
+          <div key={group.heading} className="project-group">
+            <h3 className="project-group-heading">
               {group.heading}
             </h3>
             <Row className="g-4 justify-content-center">
@@ -297,7 +297,7 @@ const Projects = () => {
                         />
                       </div>
 
-                      <Card.Body className="d-flex flex-column" style={{ padding: "24px 24px 20px" }}>
+                      <Card.Body className="d-flex flex-column project-card-content">
                         <div style={{ fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.06em", color: "#5b6675", marginBottom: 6 }}>
                           {p.kind}
                         </div>

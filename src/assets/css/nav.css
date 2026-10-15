@@ -41,6 +41,51 @@
     width: 70%;
 }
 
+/* Phone menu: 44px touch targets, left-aligned list, scrolls if the screen is short (landscape). */
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        display: inline-flex;
+        align-items: center;
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .navbar-toggler {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .navbar-collapse {
+        max-height: calc(100svh - 70px);
+        overflow-y: auto;
+        padding-bottom: 0.5rem;
+    }
+
+    #responsive-navbar-nav a.nav-link {
+        justify-content: flex-start;
+        min-height: 44px;
+        align-items: center;
+        padding: 0.5rem 0.75rem;
+        font-size: 1.05rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    #responsive-navbar-nav a.nav-link::after {
+        left: 0.75rem;
+        bottom: 6px;
+        transform: none;
+    }
+
+    #responsive-navbar-nav a.nav-link:hover::after,
+    #responsive-navbar-nav a.nav-link:focus-visible::after {
+        width: 2rem;
+    }
+
+    #responsive-navbar-nav a.nav-link.active::after {
+        width: 3rem;
+    }
+}
+
 .section-anchor {
     scroll-margin-top: 64px;
 }

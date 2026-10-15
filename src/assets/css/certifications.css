@@ -199,25 +199,66 @@
 @media only screen and (max-width: 480px) {
   .certifications-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: clamp(1.9rem, 8vw, 2.25rem) !important;
+    padding-bottom: 0;
   }
 
+  .certifications-container {
+    padding-bottom: 2.5rem;
+  }
+
+  .certifications-grid {
+    gap: 0.75rem;
+    padding: 1rem 0.75rem;
+  }
+
+  /* Logo beside the text (not stacked above it): a card is ~90px instead of ~170px. */
   .certification-card {
-    padding: 1.25rem;
+    padding: 0.9rem 1rem;
   }
 
   .certification-header {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.75rem;
+    margin-bottom: 0;
+    min-height: 0;
     align-items: center;
   }
 
   .certification-icon-wrapper {
-    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
   }
 
-  .certification-icon {
-    font-size: 1.25rem;
+  .certification-title {
+    font-size: 1.05rem;
+    margin-bottom: 0.15rem;
   }
-} 
+
+  .certification-issuer {
+    font-size: 0.9rem;
+  }
+}
+
+/* No hover on touch: the transparent overlay link still covers the whole card, and a small label shows it is tappable. */
+@media (hover: none) {
+  .certification-overlay,
+  .certification-card:hover .certification-overlay {
+    opacity: 0 !important;
+  }
+
+  .certification-card {
+    padding-bottom: 1.9rem;
+  }
+
+  .certification-card::after {
+    content: "Verify ↗";
+    position: absolute;
+    right: 0.9rem;
+    bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--DarkGrey);
+    opacity: 0.7;
+    pointer-events: none;
+  }
+}

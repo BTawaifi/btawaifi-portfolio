@@ -72,7 +72,7 @@
 
 @media (max-width: 768px) {
   .impact-section {
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
 
   .impact-title {
@@ -88,12 +88,47 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+  .impact-section {
+    padding: 2.5rem 0;
+  }
+
+  .impact-header {
+    margin-bottom: 1.5rem;
+  }
+
   .impact-title {
-    font-size: 2.25rem;
+    font-size: clamp(1.9rem, 8vw, 2.25rem);
+    margin-bottom: 0.5rem;
+  }
+
+  .impact-subtitle {
+    font-size: 1rem;
+    padding: 0 0.25rem;
+  }
+
+  /* Tighter stat cards with a smaller row gap: five stats no longer fill three screens. */
+  .impact-section .row {
+    --bs-gutter-y: 0.75rem;
+  }
+
+  .impact-card {
+    padding: 1rem 1.1rem;
+    border-radius: 12px;
   }
 
   .impact-value {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .impact-label {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .impact-detail {
+    font-size: 0.92rem;
+    line-height: 1.5;
   }
 }

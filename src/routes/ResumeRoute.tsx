@@ -25,10 +25,10 @@ const ResumeRoute = () => {
             with customer feeds over WebSocket, RabbitMQ and REST. TypeScript, Node.js, React, Angular, Go, PostgreSQL and AWS.
           </p>
           <div className="d-flex flex-wrap" style={{ gap: 12 }}>
-            <Button href="downloads/Boutros_Tawaifi_CV.docx" variant="primary">
+            <Button href="downloads/Boutros_Tawaifi_CV.docx" variant="primary" className="flex-grow-1">
               Download CV: full-stack and AI (DOCX)
             </Button>
-            <Button href="downloads/Boutros_Tawaifi_CV_RealTime.docx" variant="outline-primary">
+            <Button href="downloads/Boutros_Tawaifi_CV_RealTime.docx" variant="outline-primary" className="flex-grow-1">
               Download CV: real-time and backend (DOCX)
             </Button>
           </div>

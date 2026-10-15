@@ -226,11 +226,6 @@ button:not(:disabled) {
         border-radius: 2px;
     }
     
-    #responsive-navbar-nav .nav-link {
-        font-size: 0.9rem;
-        padding: 0.5rem 0.75rem;
-    }
-    
     #infinite-carousel ul {
         margin-top: 10%;
         margin-bottom: 1rem;

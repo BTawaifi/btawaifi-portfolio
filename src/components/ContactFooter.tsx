@@ -12,15 +12,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../assets/css/contact.css";
 
 const ContactFooter = () => {
-  const handleEmailClick = () => {
-    window.location.href = "mailto:boutros.m.tawaifi@gmail.com";
-  };
-
-  const handlePhoneClick = () => {
-    window.location.href = "tel:+201500914800";
-    // Keep in sync with the CV: +20 150 091 4800
-  };
-
   return (
     <div className="contact-section">
       <Container>
@@ -41,7 +32,7 @@ const ContactFooter = () => {
                   <div className="contact-info">
                     <h3>Get In Touch</h3>
                     <div className="contact-methods">
-                      <div className="contact-method" onClick={handleEmailClick}>
+                      <a className="contact-method" href="mailto:boutros.m.tawaifi@gmail.com">
                         <div className="method-icon">
                           <FontAwesomeIcon icon={faEnvelope} />
                         </div>
@@ -49,9 +40,10 @@ const ContactFooter = () => {
                           <h4>Email</h4>
                           <p>boutros.m.tawaifi@gmail.com</p>
                         </div>
-                      </div>
+                      </a>
 
-                      <div className="contact-method" onClick={handlePhoneClick}>
+                      {/* Keep in sync with the CV: +20 150 091 4800 */}
+                      <a className="contact-method" href="tel:+201500914800">
                         <div className="method-icon">
                           <FontAwesomeIcon icon={faPhoneAlt} />
                         </div>
@@ -59,7 +51,7 @@ const ContactFooter = () => {
                           <h4>Phone</h4>
                           <p>+20 150 091 4800</p>
                         </div>
-                      </div>
+                      </a>
 
                       <div className="contact-method">
                         <div className="method-icon">

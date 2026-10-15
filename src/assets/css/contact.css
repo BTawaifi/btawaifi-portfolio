@@ -179,7 +179,7 @@
 
 @media (max-width: 768px) {
   .contact-card {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .contact-title {
@@ -198,4 +198,100 @@
   .social-btn {
     padding: 0.875rem 1.25rem;
   }
-} 
+}
+
+/* Email and phone are real links now (tap to mail/call); reset the global link styles. */
+a.contact-method,
+a.contact-method:hover {
+  font: inherit;
+  opacity: 1;
+}
+
+.method-details {
+  min-width: 0;
+}
+
+.method-details p {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 2.5rem 0;
+  }
+
+  .contact-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-title {
+    font-size: clamp(1.9rem, 8vw, 2.25rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-content {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .contact-card {
+    padding: 1.1rem;
+  }
+
+  .contact-info h3,
+  .social-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-methods {
+    gap: 0.75rem;
+  }
+
+  .contact-method {
+    padding: 0.9rem;
+    gap: 0.75rem;
+  }
+
+  .method-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .method-icon svg {
+    font-size: 1.2rem;
+  }
+
+  .method-details h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .method-details p {
+    font-size: 0.95rem;
+  }
+
+  .social-info {
+    margin-top: 1.5rem;
+  }
+
+  .social-buttons {
+    margin-bottom: 1rem;
+  }
+
+  .social-btn {
+    min-height: 48px;
+    justify-content: center;
+  }
+
+  .resume-btn {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.9rem 1rem;
+    min-height: 48px;
+  }
+}

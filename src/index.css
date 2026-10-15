@@ -17,8 +17,47 @@ h4 {
 }
 
 h3 {
-  white-space: nowrap;
   font-size: 0.9rem;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Safety net: no section may ever make the page scroll sideways on a phone. */
+body {
+  overflow-x: clip;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Touch screens have no hover: keep the lift/zoom effects from sticking after a tap. */
+@media (hover: none) {
+  .impact-card:hover,
+  .experience-card:hover,
+  .certification-card:hover,
+  .service-card:hover,
+  .contact-method:hover,
+  .social-btn:hover,
+  .resume-btn:hover,
+  .contact-button:hover,
+  .about-secondary-button:hover,
+  .tech-tag:hover {
+    transform: none !important;
+  }
 }
 
 .card-body {
@@ -59,6 +98,7 @@ body {
 .react-loading {
   width: 100vw;
   height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
