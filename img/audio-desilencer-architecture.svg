@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f3a5f"/>
+    </marker>
+  </defs>
+  <rect width="960" height="400" fill="#ffffff"/>
+  <text x="30" y="38" font-size="20" font-weight="600" fill="#1b2430">Audio DeSilencer: pipeline</text>
+  <text x="30" y="58" font-size="13" fill="#5b6675">Only time ranges are removed. Retained audio is cut from the original, never re-processed.</text>
+
+  <!-- Row 1: analysis -->
+  <g fill="#f3f6fa" stroke="#1f3a5f" stroke-width="1.5">
+    <rect x="30" y="90" width="200" height="80" rx="8"/>
+    <rect x="290" y="90" width="200" height="80" rx="8"/>
+    <rect x="550" y="90" width="200" height="80" rx="8"/>
+    <rect x="772" y="90" width="168" height="80" rx="8"/>
+  </g>
+  <g fill="#1b2430">
+    <text x="130" y="122" text-anchor="middle" font-size="14" font-weight="600">Input file</text>
+    <text x="130" y="144" text-anchor="middle" font-size="12" fill="#5b6675">any format FFmpeg reads</text>
+    <text x="390" y="122" text-anchor="middle" font-size="14" font-weight="600">ffprobe</text>
+    <text x="390" y="144" text-anchor="middle" font-size="12" fill="#5b6675">duration, channels, rate</text>
+    <text x="650" y="122" text-anchor="middle" font-size="14" font-weight="600">FFmpeg level analysis</text>
+    <text x="650" y="144" text-anchor="middle" font-size="12" fill="#5b6675">loudness per window</text>
+    <text x="856" y="122" text-anchor="middle" font-size="14" font-weight="600">Detect silence</text>
+    <text x="856" y="144" text-anchor="middle" font-size="12" fill="#5b6675">fixed or adaptive</text>
+    <text x="856" y="160" text-anchor="middle" font-size="12" fill="#5b6675">threshold</text>
+  </g>
+
+  <!-- Row 2: decisions and output -->
+  <g fill="#e8eef7" stroke="#1f3a5f" stroke-width="1.5">
+    <rect x="750" y="230" width="180" height="80" rx="8"/>
+    <rect x="550" y="230" width="180" height="80" rx="8"/>
+    <rect x="290" y="230" width="230" height="80" rx="8"/>
+    <rect x="30" y="230" width="230" height="80" rx="8"/>
+  </g>
+  <g fill="#1b2430">
+    <text x="840" y="262" text-anchor="middle" font-size="14" font-weight="600">Removal ranges</text>
+    <text x="840" y="284" text-anchor="middle" font-size="12" fill="#5b6675">keep a natural pause</text>
+    <text x="640" y="262" text-anchor="middle" font-size="14" font-weight="600">Complement</text>
+    <text x="640" y="284" text-anchor="middle" font-size="12" fill="#5b6675">retained ranges</text>
+    <text x="405" y="262" text-anchor="middle" font-size="14" font-weight="600">Render retained audio</text>
+    <text x="405" y="284" text-anchor="middle" font-size="12" fill="#5b6675">FFmpeg trim, no processing</text>
+    <text x="145" y="262" text-anchor="middle" font-size="14" font-weight="600">Outputs</text>
+    <text x="145" y="284" text-anchor="middle" font-size="12" fill="#5b6675">*_non_silent.wav</text>
+  </g>
+
+  <!-- Output files -->
+  <g fill="#f3f6fa" stroke="#1f3a5f" stroke-width="1.5">
+    <rect x="30" y="340" width="430" height="44" rx="6"/>
+    <rect x="490" y="340" width="440" height="44" rx="6"/>
+  </g>
+  <g fill="#1b2430" font-size="13">
+    <text x="45" y="367">*_silent.wav (optional, for inspection)  ·  source-time timeline text files</text>
+    <text x="505" y="367">Timeline shows what was removed and what was kept</text>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="#1f3a5f" stroke-width="1.6" fill="none" marker-end="url(#arr)">
+    <line x1="230" y1="130" x2="288" y2="130"/>
+    <line x1="490" y1="130" x2="548" y2="130"/>
+    <line x1="750" y1="130" x2="770" y2="130"/>
+    <line x1="856" y1="170" x2="856" y2="228"/>
+    <line x1="750" y1="270" x2="732" y2="270"/>
+    <line x1="550" y1="270" x2="522" y2="270"/>
+    <line x1="290" y1="270" x2="262" y2="270"/>
+    <line x1="145" y1="310" x2="145" y2="338"/>
+    <line x1="405" y1="310" x2="405" y2="338"/>
+  </g>
+</svg>

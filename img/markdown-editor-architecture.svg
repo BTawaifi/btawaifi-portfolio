@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f3a5f"/>
+    </marker>
+  </defs>
+  <rect width="960" height="460" fill="#ffffff"/>
+  <text x="30" y="38" font-size="20" font-weight="600" fill="#1b2430">Hybrid Markdown Editor: how a document is rendered and edited</text>
+  <text x="30" y="58" font-size="13" fill="#5b6675">The document is a list of lines. Only the focused line is an editable textarea.</text>
+
+  <!-- Parent app -->
+  <rect x="30" y="100" width="180" height="80" rx="8" fill="#fff8ec" stroke="#8a4b00" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="120" y="132" text-anchor="middle" font-size="14" font-weight="600" fill="#1b2430">Your React app</text>
+  <text x="120" y="154" text-anchor="middle" font-size="12" fill="#5b6675">value, onChange</text>
+
+  <!-- Document model -->
+  <rect x="260" y="100" width="200" height="80" rx="8" fill="#f3f6fa" stroke="#1f3a5f" stroke-width="1.5"/>
+  <text x="360" y="132" text-anchor="middle" font-size="14" font-weight="600" fill="#1b2430">Lines</text>
+  <text x="360" y="154" text-anchor="middle" font-size="12" fill="#5b6675">value split by newline</text>
+
+  <!-- Per-line classification -->
+  <rect x="520" y="100" width="200" height="80" rx="8" fill="#f3f6fa" stroke="#1f3a5f" stroke-width="1.5"/>
+  <text x="620" y="132" text-anchor="middle" font-size="14" font-weight="600" fill="#1b2430">Classify each line</text>
+  <text x="620" y="154" text-anchor="middle" font-size="12" fill="#5b6675">h1–h4, li, blockquote, p</text>
+
+  <!-- Two render paths -->
+  <rect x="520" y="222" width="200" height="72" rx="8" fill="#e8eef7" stroke="#1f3a5f" stroke-width="1.5"/>
+  <text x="620" y="252" text-anchor="middle" font-size="14" font-weight="600" fill="#1b2430">Focused line</text>
+  <text x="620" y="274" text-anchor="middle" font-size="12" fill="#5b6675">textarea, auto-resizing</text>
+
+  <rect x="260" y="222" width="200" height="72" rx="8" fill="#e8eef7" stroke="#1f3a5f" stroke-width="1.5"/>
+  <text x="360" y="252" text-anchor="middle" font-size="14" font-weight="600" fill="#1b2430">Other lines</text>
+  <text x="360" y="274" text-anchor="middle" font-size="12" fill="#5b6675">parseBold, read-only</text>
+
+  <!-- Events -->
+  <rect x="760" y="100" width="170" height="194" rx="8" fill="#f3f6fa" stroke="#1f3a5f" stroke-width="1.5"/>
+  <text x="845" y="128" text-anchor="middle" font-size="14" font-weight="600" fill="#1b2430">Input handling</text>
+  <g font-size="12" fill="#1b2430">
+    <text x="775" y="158">Click: map pixel to</text>
+    <text x="775" y="174">source index</text>
+    <text x="775" y="200">Enter: continue list</text>
+    <text x="775" y="226">Backspace: remove</text>
+    <text x="775" y="242">marker or indent</text>
+    <text x="775" y="268">Paste and keydown</text>
+    <text x="775" y="284">extension hooks</text>
+  </g>
+
+  <!-- Output back to app -->
+  <rect x="260" y="350" width="440" height="60" rx="8" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+  <text x="480" y="376" text-anchor="middle" font-size="14" font-weight="600" fill="#1b2430">onChange(new value) on every edit</text>
+  <text x="480" y="396" text-anchor="middle" font-size="12" fill="#5b6675">onDebouncedChange after debounceMs, for saving</text>
+
+  <!-- Arrows -->
+  <g stroke="#1f3a5f" stroke-width="1.6" fill="none" marker-end="url(#arr)">
+    <!-- app -> lines -> classify -->
+    <line x1="210" y1="140" x2="258" y2="140"/>
+    <line x1="460" y1="140" x2="518" y2="140"/>
+    <!-- classify -> focused line (vertical) and -> other lines (diagonal, clear of the focused box) -->
+    <line x1="620" y1="180" x2="620" y2="220"/>
+    <line x1="545" y1="180" x2="400" y2="220"/>
+    <!-- input handling -> focused line -->
+    <line x1="758" y1="258" x2="722" y2="258"/>
+    <!-- both render paths -> onChange -->
+    <line x1="620" y1="294" x2="560" y2="348"/>
+    <line x1="360" y1="294" x2="400" y2="348"/>
+  </g>
+  <!-- onChange -> app (edits flow back to the parent) -->
+  <path d="M260,380 L70,380 L70,192" fill="none" stroke="#8a4b00" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr)"/>
+  <text x="165" y="372" text-anchor="middle" font-size="11" fill="#8a4b00">new value back to the app</text>
+</svg>
