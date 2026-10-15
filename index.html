@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boutros Tawaifi · Senior Full-Stack Engineer</title>
+  <meta name="description" content="Boutros Tawaifi, senior full-stack engineer: TypeScript, Node.js, React and real-time data systems.">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1b2430;
+      --muted: #5b6675;
+      --accent: #1f3a5f;
+      --rule: #dfe4ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0f141b;
+        --fg: #e6ebf1;
+        --muted: #9aa6b4;
+        --accent: #8fb3e0;
+        --rule: #263142;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0f141b;
+      --fg: #e6ebf1;
+      --muted: #9aa6b4;
+      --accent: #8fb3e0;
+      --rule: #263142;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+    h1 { font-size: 2rem; margin: 0 0 4px; }
+    h2 { font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
+    .role { font-weight: 600; margin: 0 0 8px; }
+    .contact { color: var(--muted); margin: 0; }
+    a { color: var(--accent); }
+    p { margin: 0 0 12px; }
+    .project { margin: 0 0 20px; }
+    .project h3 { font-size: 1.05rem; margin: 0 0 4px; }
+    .project .links a { margin-right: 12px; font-size: 0.92rem; }
+    .project p { color: var(--muted); margin: 0; }
+    .footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+    @media (max-width: 420px) { h1 { font-size: 1.6rem; } main { padding: 32px 16px 48px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Boutros Tawaifi</h1>
+      <p class="role">Senior Full-Stack Engineer</p>
+      <p class="contact">
+        <a href="mailto:boutros.m.tawaifi@gmail.com">boutros.m.tawaifi@gmail.com</a> ·
+        <a href="https://www.linkedin.com/in/boutros-tawaifi">LinkedIn</a> ·
+        <a href="https://github.com/BTawaifi">GitHub</a> ·
+        <a href="Boutros_Tawaifi_CV.docx" download>Download CV (DOCX)</a>
+      </p>
+    </header>
+
+    <h2>About</h2>
+    <p>Full-stack engineer with five years building and running a live, real-time sports-data platform: 50K+ matches reported across 70+ countries, with customer feeds over WebSocket, RabbitMQ and REST.</p>
+    <p>TypeScript, Node.js, React, Angular, PostgreSQL and AWS. I build with coding agents daily, and every change is reviewed and tested.</p>
+
+    <h2>Selected projects</h2>
+
+    <div class="project">
+      <h3>Codebase MCP Bridge</h3>
+      <p>A Model Context Protocol server that gives AI coding tools controlled access to a repository: batched search and read, patches with rollback, Git, and allowlisted validation over stdio or OAuth-protected HTTP.</p>
+      <img src="img/mcp-bridge-repo.jpg" alt="Codebase MCP Bridge repository on GitHub" width="900" height="443" loading="lazy" style="width:100%;height:auto;border:1px solid var(--rule);border-radius:6px;margin:8px 0">
+      <p class="links"><a href="https://github.com/BTawaifi/codebase-mcp-bridge">Source</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Image moderation (university project)</h3>
+      <p>OpenAI CLIP zero-shot image classification on FastAPI workers, with NestJS microservices (gateway, auth, upload, storage) over RabbitMQ.</p>
+      <p class="links"><a href="https://github.com/BTawaifi/Affordable-Image-Moderation-CLIP-Model-with-FastAPI-Framework">Source</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Strategy Asylum</h3>
+      <p>A Next.js and PostgreSQL web app: an AI co-pilot that guides business-strategy frameworks such as SWOT and PESTLE and generates strategy documents.</p>
+      <img src="img/strategy-asylum.jpg" alt="Strategy Asylum landing page" width="900" height="443" loading="lazy" style="width:100%;height:auto;border:1px solid var(--rule);border-radius:6px;margin:8px 0">
+      <p class="links"><a href="https://strategy.tasawom.com/">Live site</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Audio DeSilencer</h3>
+      <p>A Python package and CLI that detects and removes silence from audio, with configurable thresholds and FFmpeg-backed format support. Installable with pip.</p>
+      <p class="links"><a href="https://github.com/BTawaifi/Audio-DeSilencer">Source</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Hybrid Markdown Editor</h3>
+      <p>A reusable React markdown editor that renders inactive lines and turns the focused line into an inline editor, built as a controlled component with an extensions API.</p>
+      <p class="links"><a href="https://github.com/BTawaifi/hybrid-markdown-editor">Source</a></p>
+    </div>
+
+    <p class="footer">Built with plain HTML. Last updated October 2026.</p>
+  </main>
+</body>
+</html>
