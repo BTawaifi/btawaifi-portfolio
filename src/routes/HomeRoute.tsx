@@ -1,11 +1,9 @@
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import React,{lazy,useRef} from "react";
 import "intersection-observer";
-import {
-    GeneralContainer,
-    About,
-    NavFull
-} from "../ImportExport";
+import GeneralContainer from "../components/GeneralContainer";
+import About from "../components/About";
+import { NavFull } from "../components/NavFull";
 import SkipLink from "../components/SkipLink";
 
 import { motion } from "framer-motion";

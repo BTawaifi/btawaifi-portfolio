@@ -1,16 +1,27 @@
 # Boutros Tawaifi: portfolio
 
-Personal portfolio, rebuilt from the earlier React site. Single-page React app (Create React App) with animated sections.
+Live site: https://btawaifi-portfolio.vercel.app
 
-## Run locally
+A single-page portfolio for a senior full-stack engineer: impact figures, engineering toolkit, experience,
+certifications, selected projects and contact details. Client work is shown without client names, using mock data or
+cropped screenshots.
 
-    npm install
-    npm start
+## Stack
 
-## Build
+React 18, TypeScript, Vite, React Bootstrap, Framer Motion, React Router (hash routing). Fonts and icons are bundled;
+there is no back end.
 
-    npm run build
+## Develop
 
-## Content
+```bash
+npm install
+npm run dev      # local dev server
+npm run build    # type-check, then build to ./build
+npm run preview  # serve the production build locally
+```
 
-Content lives in the components: Experience.tsx, Projects.tsx, Impact.tsx, Skills.tsx, ContactFooter.tsx. The downloadable CV is public/downloads/Boutros_Tawaifi_CV.docx.
+`npm audit` reports no known vulnerabilities at the time of writing.
+
+## Deploy
+
+Pushes to `main` build on Vercel (`npm run build`, output directory `build`).
