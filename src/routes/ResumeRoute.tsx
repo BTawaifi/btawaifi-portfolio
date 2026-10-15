@@ -24,9 +24,14 @@ const ResumeRoute = () => {
             Five years building and running a live, real-time sports-data platform: 50K+ matches reported across 70+ countries,
             with customer feeds over WebSocket, RabbitMQ and REST. TypeScript, Node.js, React, Angular, Go, PostgreSQL and AWS.
           </p>
-          <Button href="downloads/Boutros_Tawaifi_CV.docx" variant="primary">
-            Download CV (DOCX)
-          </Button>
+          <div className="d-flex flex-wrap" style={{ gap: 12 }}>
+            <Button href="downloads/Boutros_Tawaifi_CV.docx" variant="primary">
+              Download CV: full-stack and AI (DOCX)
+            </Button>
+            <Button href="downloads/Boutros_Tawaifi_CV_RealTime.docx" variant="outline-primary">
+              Download CV: real-time and backend (DOCX)
+            </Button>
+          </div>
           <div style={{ marginTop: 24 }}>
             <Button href="#/" variant="outline-secondary">Back to portfolio</Button>
           </div>
