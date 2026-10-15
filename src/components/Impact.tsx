@@ -23,7 +23,7 @@ const stats: ImpactStat[] = [
   {
     value: "70–150 ms",
     label: "Customer feed latency",
-    detail: "Request/response on the customer feed endpoints (author's own measurement, no percentile study yet)."
+    detail: "Live request/response time on the customer feed endpoints (own measurement)."
   },
   {
     value: "3,000+",
