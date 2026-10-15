@@ -1,0 +1,60 @@
+{
+  "short_name": "Boutros Tawaifi",
+  "name": "Boutros Tawaifi Portfolio",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#50575d",
+  "background_color": "#ffffff",
+  "description": "Full-Stack React And NodeJs Express developer, Logo, Branding, Design And Computer Engineering | BT | BTChatting | Boutros Tawaifi",
+  "shortcuts": [
+    {
+      "name": "Btawaifi Main",
+      "short_name": "Btawaifi",
+      "description": "Full-Stack React And NodeJs Express developer, Logo, Branding, Design And Computer Engineering | BT | BTChatting | Boutros Tawaifi",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "/android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "BTAnime",
+      "short_name": "BTAnime",
+      "description": "Download Or Watch Anime Online In High Quality With English Subs And Dubs",
+      "url": "/#/btanime",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "/android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+.logoText{
+    color: var(--LightGrey);
+}
+
+.navTransparent{
+    position: absolute !important;
+    background-color: rgba(255, 255, 255, 0.212) !important;
+}
+
+/* Link states: hover previews the underline, the active section keeps a longer one. */
+#responsive-navbar-nav a.nav-link {
+    position: relative;
+    color: var(--DarkGrey);
+}
+
+#responsive-navbar-nav a.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    width: 0;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--DarkGrey);
+    transform: translateX(-50%);
+    transition: width 0.25s ease;
+}
+
+#responsive-navbar-nav a.nav-link:hover,
+#responsive-navbar-nav a.nav-link:focus-visible {
+    opacity: 1;
+    color: var(--DarkGrey);
+}
+
+#responsive-navbar-nav a.nav-link:hover::after,
+#responsive-navbar-nav a.nav-link:focus-visible::after {
+    width: 40%;
+}
+
+#responsive-navbar-nav a.nav-link.active::after {
+    width: 70%;
+}
+
+.section-anchor {
+    scroll-margin-top: 64px;
+}
