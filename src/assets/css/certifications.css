@@ -210,6 +210,12 @@
   .certifications-grid {
     gap: 0.75rem;
     padding: 1rem 0.75rem;
+    /* Every row as tall as the tallest card, so titles of different length don't give ragged heights. */
+    grid-auto-rows: 1fr;
+  }
+
+  .certification-header {
+    height: 100%;
   }
 
   /* Logo beside the text (not stacked above it): a card is ~90px instead of ~170px. */

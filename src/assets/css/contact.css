@@ -246,6 +246,7 @@ a.contact-method:hover {
   .social-info h3 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   .contact-methods {
