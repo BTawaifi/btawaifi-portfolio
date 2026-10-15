@@ -236,9 +236,9 @@ const groups: Group[] = [
         title: "Connect 4",
         kind: "University · hardware",
         summary:
-          "An electronic Connect 4 game built on Arduino as a Computer Engineering project.",
-        tech: ["Arduino", "C++"],
-        image: { src: connect4, alt: "Connect 4 project logo", fit: "cover" },
+          "An electronic version of Connect 4 on an Arduino Uno (ATmega328), simulated in Proteus: players pick a colour and move with buttons, and an RGB LED matrix shows the coins dropping. Computer Engineering project, built with two classmates.",
+        tech: ["Arduino", "Proteus", "Embedded"],
+        image: { src: connect4, alt: "Flow chart of the Connect 4 project: input buttons, input handling, controller, output handling, RGB LED matrix", fit: "contain" },
         links: [{ label: "Slides", href: "https://docs.google.com/presentation/d/e/2PACX-1vQv4wZtWALo0uGILweo8X_tTDX72SEyJQ_511VSY7nE5vGtuMY5munTtOnDgr2CHg/pub?start=false&loop=false&delayms=5000" }]
       }
     ]
