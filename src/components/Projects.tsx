@@ -5,7 +5,7 @@ import "../assets/css/impact.css";
 
 import couponHome from "../assets/img/portfolio/coupon-customer-home.jpg";
 import elearningLanding from "../assets/img/portfolio/elearning-landing.jpg";
-import propertyLanding from "../assets/img/portfolio/property-landing.jpg";
+import propertyApp from "../assets/img/portfolio/property-app.jpg";
 import strategyShot from "../assets/img/portfolio/strategy-asylum.jpg";
 import uaefmaHome from "../assets/img/portfolio/uaefma-home.jpg";
 import festivalListing from "../assets/img/portfolio/festival-listing.jpg";
@@ -133,7 +133,7 @@ const groups: Group[] = [
         summary:
           "Paymob payments (checkout, refunds, payment status) and company subscription and evaluation features, built in a small front-end team with a lead developer coordinating the work and reviewing code.",
         tech: ["React", "Paymob", "Front-end team"],
-        image: { src: propertyLanding, alt: "Public landing page of a property-evaluation platform, with mock data", fit: "cover" },
+        image: { src: propertyApp, alt: "Properties list in the company workspace of a property-evaluation platform, with mock data", fit: "cover" },
         links: []
       }
     ]
