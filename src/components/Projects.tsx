@@ -85,24 +85,6 @@ const groups: Group[] = [
     heading: "Client work",
     projects: [
       {
-        title: "Coupon and membership marketplace",
-        kind: "Client work",
-        summary:
-          "Sole front-end developer of a bilingual (Arabic/English) customer web app and admin panel with subscriptions, QR coupon redemption and role-based permissions, working with back-end engineers and business stakeholders on API contracts and design specs. Mock data.",
-        tech: ["React", "Redux Toolkit", "Material UI"],
-        image: { src: couponHome, alt: "Customer home page of a coupon marketplace, with mock data", fit: "cover" },
-        links: []
-      },
-      {
-        title: "Property-evaluation SaaS",
-        kind: "Client work",
-        summary:
-          "Paymob payments (checkout, refunds, payment status) and company subscription and evaluation features, built in a small front-end team with a lead developer coordinating the work and reviewing code.",
-        tech: ["React", "Paymob", "Front-end team"],
-        image: { src: propertyLanding, alt: "Public landing page of a property-evaluation platform, with mock data", fit: "cover" },
-        links: []
-      },
-      {
         title: "E-learning platform",
         kind: "Client work",
         summary:
@@ -135,6 +117,24 @@ const groups: Group[] = [
         tech: ["WordPress", "Flatsome"],
         image: { src: uaefmaHome, alt: "Awards banner on a financial markets association website", fit: "cover" },
         links: [{ label: "Live site", href: "https://www.uaefma.com/" }]
+      },
+      {
+        title: "Coupon and membership marketplace",
+        kind: "Client work",
+        summary:
+          "Sole front-end developer of a bilingual (Arabic/English) customer web app and admin panel with subscriptions, QR coupon redemption and role-based permissions, working with back-end engineers and business stakeholders on API contracts and design specs. Mock data.",
+        tech: ["React", "Redux Toolkit", "Material UI"],
+        image: { src: couponHome, alt: "Customer home page of a coupon marketplace, with mock data", fit: "cover" },
+        links: []
+      },
+      {
+        title: "Property-evaluation SaaS",
+        kind: "Client work",
+        summary:
+          "Paymob payments (checkout, refunds, payment status) and company subscription and evaluation features, built in a small front-end team with a lead developer coordinating the work and reviewing code.",
+        tech: ["React", "Paymob", "Front-end team"],
+        image: { src: propertyLanding, alt: "Public landing page of a property-evaluation platform, with mock data", fit: "cover" },
+        links: []
       }
     ]
   },
