@@ -48,7 +48,7 @@ const groups: Group[] = [
         kind: "Open source · built with AI agents",
         summary:
           "A Model Context Protocol server that gives AI coding tools controlled access to a repository: batched search and read, patches with rollback, Git, and allowlisted validation over stdio or OAuth-protected HTTP. Tested in CI on Node 22 and 24.",
-        tech: ["TypeScript", "MCP", "Node.js", "OAuth"],
+        tech: ["TypeScript", "MCP", "Node.js", "OAuth", "GitHub Actions"],
         image: { src: mcpArchitecture, alt: "Architecture diagram of the Codebase MCP Bridge", fit: "contain" },
         links: [{ label: "Source", href: "https://github.com/BTawaifi/codebase-mcp-bridge" }]
       },
@@ -56,8 +56,8 @@ const groups: Group[] = [
         title: "Strategy Asylum",
         kind: "Live product · built with AI agents",
         summary:
-          "A Next.js and PostgreSQL web app: an AI co-pilot that guides business-strategy frameworks such as SWOT and PESTLE and generates strategy documents.",
-        tech: ["Next.js", "PostgreSQL", "LLM APIs"],
+          "A Next.js, Drizzle ORM and PostgreSQL web app, tested with Vitest: an AI co-pilot that guides business-strategy frameworks such as SWOT and PESTLE and generates strategy documents.",
+        tech: ["Next.js", "Drizzle ORM", "PostgreSQL", "LLM APIs"],
         image: { src: strategyShot, alt: "Strategy Asylum landing page with an interface preview", fit: "cover" },
         links: [{ label: "Live site", href: "https://strategy.tasawom.com/" }]
       },

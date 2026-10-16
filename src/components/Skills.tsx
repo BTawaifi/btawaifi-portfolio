@@ -42,13 +42,13 @@ const Skills = () => {
     {
       title: "Backend & Data",
       description: "Real-time ingestion, customer feeds and time-series storage.",
-      technologies: ["Node.js", "Express", "TypeORM", "REST APIs", "WebSocket", "RabbitMQ (AMQP)", "OpenAPI", "PostgreSQL", "TimescaleDB", "MySQL", "Redis"],
+      technologies: ["Node.js", "Express", "TypeORM", "Drizzle ORM", "REST APIs", "WebSocket", "RabbitMQ (AMQP)", "OpenAPI", "PostgreSQL", "TimescaleDB", "MySQL", "Redis"],
       icon: faCogs
     },
     {
       title: "Cloud & DevOps",
       description: "Production on AWS with scripted deploys, migrations and health checks.",
-      technologies: ["AWS EC2", "VPC", "Security Groups", "SSM Parameter Store", "Linux", "Docker", "PM2"],
+      technologies: ["AWS EC2", "VPC", "Security Groups", "SSM Parameter Store", "Linux", "Docker", "PM2", "CI/CD (GitHub Actions)"],
       icon: faRocket
     },
     {
@@ -60,7 +60,7 @@ const Skills = () => {
     {
       title: "Testing & Quality",
       description: "Automated tests, static analysis and replay tooling.",
-      technologies: ["Jest", "Vitest", "SonarQube", "Semgrep", "Replay tools"],
+      technologies: ["Jest", "Vitest", "Supertest", "SonarQube", "Semgrep", "Replay tools"],
       icon: faChartLine
     }
   ];
