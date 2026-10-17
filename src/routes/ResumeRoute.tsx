@@ -22,7 +22,7 @@ const ResumeRoute = () => {
           <p style={{ fontWeight: 600, marginBottom: 8 }}>Senior Full-Stack Engineer</p>
           <p style={{ marginBottom: 20 }}>
             Five years building and running a live, real-time sports-data platform: 50K+ matches reported across 70+ countries,
-            with customer feeds over WebSocket, RabbitMQ and REST. TypeScript, Node.js, React, Angular, Go, PostgreSQL and AWS.
+            with customer feeds over WebSocket, RabbitMQ and REST. TypeScript, Node.js, React, Angular, Go, MySQL, PostgreSQL and AWS.
           </p>
           <div className="d-flex flex-wrap" style={{ gap: 12 }}>
             <Button href="downloads/Boutros_Tawaifi_CV.docx" variant="primary" className="flex-grow-1">

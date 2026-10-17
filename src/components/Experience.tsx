@@ -28,7 +28,7 @@ const experience: ExperienceItem[] = [
       "Extended the React reporter apps (lineups, substitutions, penalty shootouts, basketball quarters) and the Angular admin's moderator tools; built trial accounts limited by region and competition, and a customer dashboard.",
       "Security: authentication and access control, Redis-backed rate limiting, security headers.",
       "Added 3,000+ automated tests (208 suites; Jest, Vitest, Supertest API tests), SonarQube and Semgrep scans, and replay tools that re-run recorded matches to verify fixes.",
-      "Ran production on Linux and AWS (EC2, Docker) with scripted per-service deploys: reviewed database migrations, a PM2 restart and health checks.",
+      "Ran production on Linux and AWS (EC2) with scripted per-service deploys: reviewed database migrations, a PM2 restart and health checks.",
       "Fixed outbound email being rejected by Google Workspace with rate-limit errors: traced it in the application logs to a non-obvious mail-library setting that made the server identify itself by its IP instead of the domain.",
       "Coding with AI since 2023, from manual ChatGPT-assisted work to an agentic workflow (Claude Code, Codex): tasks are built in slices on separate branches or worktrees, cross-reviewed by a second agent, then checked with unit, integration, mutation and fuzz tests plus visual and divergence checks. I review the agents' work through documents at several levels of detail, as I would another engineer's, and read the code myself before the final review. Deploy access is unlocked only for the release and relocked."
     ],
@@ -38,13 +38,13 @@ const experience: ExperienceItem[] = [
       "React",
       "Angular",
       "Go",
+      "MySQL",
       "PostgreSQL",
       "TimescaleDB",
       "Redis",
       "RabbitMQ",
       "WebSocket",
       "AWS EC2",
-      "Docker",
       "PM2"
     ]
   },

@@ -24,12 +24,12 @@ const Skills = () => {
     "Node.js",
     "React",
     "Angular",
+    "MySQL",
     "PostgreSQL",
     "TimescaleDB",
     "Redis",
     "RabbitMQ",
     "AWS",
-    "Docker"
   ];
 
   const services = [
@@ -48,7 +48,7 @@ const Skills = () => {
     {
       title: "Cloud & DevOps",
       description: "Production on AWS with scripted deploys, migrations and health checks.",
-      technologies: ["AWS EC2", "VPC", "Security Groups", "SSM Parameter Store", "Linux", "Docker", "PM2", "CI/CD (GitHub Actions)"],
+      technologies: ["AWS EC2", "VPC", "Security Groups", "SSM Parameter Store", "Linux", "Docker (local development)", "PM2", "CI/CD (GitHub Actions)"],
       icon: faRocket
     },
     {
